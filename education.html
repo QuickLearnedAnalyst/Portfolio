@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Education | Abhiii🖤</title>
+<style>
+/* ─── RESET & BASE ─── */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f9fc;color:#222}
+
+/* ─── NAVBAR ─── */
+.navbar{background:#1e1e2f;padding:1rem 2rem;display:flex;align-items:center;color:#fff}
+.logo{font-size:1.5rem}
+.nav{list-style:none;margin-left:auto;display:flex;gap:1.2rem}
+.nav a{color:#d1d1e9;text-decoration:none;font-weight:500}
+.nav a:hover,.nav .active{color:#fff}
+
+/* ─── GRID ─── */
+.container{max-width:1200px;margin:auto;padding:2rem 1rem}
+h2{text-align:center;margin-bottom:2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
+.card{background:#fff;padding:1.5rem;border-radius:12px;
+      box-shadow:0 4px 16px rgba(0,0,0,.08);
+      display:flex;flex-direction:column;justify-content:center;text-align:center}
+.card h3{font-size:1.2rem;margin-bottom:.6rem}
+.card p{margin-bottom:.4rem;font-size:.9rem}
+.subtle{color:#999;font-style:italic}
+
+/* ─── FOOTER ─── */
+footer{background:#1e1e2f;color:#fff;text-align:center;padding:1rem;margin-top:3rem}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a class="active" href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- EDUCATION CARDS -->
+<main class="container">
+  <h2>My Education</h2>
+
+  <div class="grid">
+
+    <!-- 10th -->
+    <div class="card">
+      <h3>10<sup>th</sup> Standard</h3>
+      <p>Wamanrao Mahadik Vidyalaya&nbsp;Talere</p>
+      <p class="subtle">Maharashtra State Board</p>
+      <p><strong>81.00 %</strong> (Mar 2018)</p>
+      <p>Talere, Maharashtra</p>
+    </div>
+
+    <!-- 12th -->
+    <div class="card">
+      <h3>12<sup>th</sup> Standard</h3>
+      <p>Sheth Navinchandra Mafatlal Vidyalaya</p>
+      <p class="subtle">Maharashtra State Board</p>
+      <p><strong>60.00 %</strong> (Feb 2020)</p>
+      <p>Kharepatan, Maharashtra</p>
+    </div>
+
+    <!-- Graduation -->
+    <div class="card">
+      <h3>B.Sc.&nbsp;IT (Graduation)</h3>
+      <p>South Indian Children’s Education Society’s Degree College</p>
+      <p class="subtle">University of Mumbai</p>
+      <p><strong>CGPA&nbsp;7.71</strong> (2024)</p>
+      <p>Ambernath, Maharashtra</p>
+    </div>
+
+    <!-- Empty slot -->
+    <div class="card" style="border:2px dashed #ccc;color:#888;">
+      <h3>Future Education</h3>
+      <p>Add details when completed</p>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer><p>@2025 Abhijit Salistekar . All Rights Reserved.</p></footer>
+</body>
+</html>

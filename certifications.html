@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Certifications | Abhiii🖤</title>
+<style>
+/* RESET + BASE */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f9fc;color:#222}
+
+/* NAVBAR */
+.navbar{background:#1e1e2f;padding:1rem 2rem;display:flex;align-items:center;color:#fff}
+.logo{font-size:1.5rem}
+.nav{list-style:none;margin-left:auto;display:flex;gap:1.2rem}
+.nav a{color:#d1d1e9;text-decoration:none;font-weight:500}
+.nav a:hover,.nav .active{color:#fff}
+
+/* GRID + CARDS */
+.container{max-width:1200px;margin:auto;padding:2rem 1rem}
+h2{text-align:center;margin-bottom:2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
+.card{background:#fff;padding:1.5rem;border-radius:12px;
+      box-shadow:0 4px 16px rgba(0,0,0,.08);
+      display:flex;flex-direction:column;justify-content:space-between;text-align:center}
+.card h3{font-size:1.1rem;margin-bottom:.4rem}
+.issuer{color:#666;font-size:.9rem}
+.date{font-size:.85rem}
+.buttons{margin-top:1rem;display:flex;justify-content:center;gap:.6rem}
+.btn{background:#1e1e2f;color:#fff;padding:.45rem .9rem;border:none;border-radius:8px;
+     font-size:.85rem;cursor:pointer;text-decoration:none}
+.btn:hover{background:#ff6b6b}
+
+/* MODAL */
+.overlay{position:fixed;inset:0;display:none;place-items:center;
+         background:rgba(0,0,0,.6);z-index:1000}
+.modal{background:#fff;padding:24px 18px;border-radius:12px;max-width:600px;width:90%;
+       max-height:80vh;overflow:auto;position:relative}
+.close{position:absolute;top:10px;right:16px;font-size:1.4rem;cursor:pointer;border:none;background:none}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.chip{background:#f1f3f7;padding:6px;border-radius:6px;text-align:center;font-size:.85rem}
+
+/* FOOTER */
+footer{background:#1e1e2f;color:#fff;text-align:center;padding:1rem;margin-top:3rem}
+</style>
+</head>
+<body>
+
+<!-- ---------- NAVBAR ---------- -->
+<header>
+  <nav class="navbar">
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a class="active" href="certifications.html">Certifications</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ---------- CERTIFICATIONS GRID ---------- -->
+<main class="container">
+  <h2>My Certifications</h2>
+
+  <div class="grid">
+    <!-- CARD 1 -->
+    <div class="card">
+      <h3>Introduction to Data Analytics</h3>
+      <p class="issuer">Simplilearn</p>
+      <p class="date">May 2024</p>
+      <div class="buttons">
+        <button class="btn"
+          onclick="openSkills('Data Cleaning,Data Analytics Fundamentals,Data Interpretation,Statistical Analysis,Problem-Solving,Data Collection,Data Visualization')">
+          Skills
+        </button>
+        <a class="btn" href="https://drive.google.com/file/d/1U8zPnQmLtQriQmO9u-CArjaRcS0MKydY/view?usp=drivesdk" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+      <h3>Microsoft Excel for Data Analyst</h3>
+      <p class="issuer">Infosys Springboard</p>
+      <p class="date">Jun 2024</p>
+      <div class="buttons">
+        <button class="btn"
+          onclick="openSkills('Data Cleaning and Preparation,Data Interpretation,Statistical Analysis,Microsoft Excel,Problem-Solving,Business Reporting,Data Visualization')">
+          Skills
+        </button>
+        <a class="btn" href="https://drive.google.com/file/d/1UvVs_6aIo2rv3cQreCR-G_AGxAC5Q0hU/view?usp=drivesdk" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+      <h3>Google Analytics for Beginners</h3>
+      <p class="issuer">Google</p>
+      <p class="date">Jun 2024</p>
+      <div class="buttons">
+        <button class="btn"
+          onclick="openSkills('Goal Tracking,Digital Marketing Insights,Web Analytics,Data Analysis,SEO Analysis,Reporting,Google Analytics')">
+          Skills
+        </button>
+        <a class="btn" href="https://drive.google.com/file/d/1Ux-ASACZq5RMeISGajnNeOj9QY42ezVV/view?usp=drivesdk" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+      <h3>Introduction to Career Skills in Data Analytics</h3>
+      <p class="issuer">LinkedIn</p>
+      <p class="date">july 2024</p>
+      <div class="buttons">
+        <button class="btn"
+          onclick="openSkills('Data Analytics,Tech Career Skills')">
+          Skills
+        </button>
+        <a class="btn" href="https://drive.google.com/file/d/1_UQxLudX_V5OqRbyq-TsOcE98BwIQGcN/view?usp=drivesdk" target="_blank">View Certificate</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ---------- FOOTER ---------- -->
+<footer><p>@2025 Abhijit Salistekar . All Rights Reserved.</p></footer>
+
+<!-- ---------- MODAL STRUCTURE ---------- -->
+<div id="overlay" class="overlay" onclick="closeModal()">
+  <div class="modal" onclick="event.stopPropagation()">
+    <button class="close" onclick="closeModal()">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ---------- PLAIN JS ---------- -->
+<script>
+function openSkills(csv){
+  var list = csv.split(',');
+  var html = '<h3 style="text-align:center;margin-bottom:12px">Skills Gained</h3><div class="skills-grid">';
+  for(var i=0;i<list.length;i++){
+    html += '<div class="chip">'+list[i].trim()+'</div>';
+  }
+  html += '</div>';
+  document.getElementById('modalContent').innerHTML = html;
+  document.getElementById('overlay').style.display = 'grid';
+}
+function closeModal(){
+  document.getElementById('overlay').style.display = 'none';
+  document.getElementById('modalContent').innerHTML = '';
+}
+</script>
+</body>
+</html>
